@@ -33,6 +33,16 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 3.0.3
+  espressif/mdns:
+    component_hash: 1ebe3bd675bb9d1c58f52bc0b609b32f74e572b01c328f9e61282040c775495c
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.11.0
   idf:
     source:
       type: idf
@@ -40,7 +50,8 @@ dependencies:
 direct_dependencies:
 - espressif/esp32-camera
 - espressif/led_strip
+- espressif/mdns
 - idf
-manifest_hash: 045c93a0ff27cfd47903905978f07c0b97a81a4fcc3b3b3189114145ae5c647d
+manifest_hash: 820d5e143bc291fdb668eb14107c286f1f443b4321f42cf6cf33bb5697800156
 target: esp32s3
 version: 2.0.0

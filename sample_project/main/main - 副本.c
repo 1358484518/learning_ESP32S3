@@ -4,7 +4,7 @@
 #include "klpcamera.h"
 void app_main(void)
 {
-    // ws2812();
+    ws2812();
     // klpgpio();
-    klpcamera();
+    //klpcamera();
 }

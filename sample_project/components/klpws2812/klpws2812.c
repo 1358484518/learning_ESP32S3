@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "klpws2812.h"
+#include "esp_random.h"
+
 /*
  * SPDX-FileCopyrightText: 2023-2024 Espressif Systems (Shanghai) CO LTD
  *
@@ -74,7 +76,10 @@ void ws2812(void)
         if (led_on_off) {
             /* Set the LED pixel using RGB from 0 (0%) to 255 (100%) for each color */
             for (int i = 0; i < LED_STRIP_LED_COUNT; i++) {
-                ESP_ERROR_CHECK(led_strip_set_pixel(led_strip, i, 5, 25, 5));
+                ESP_ERROR_CHECK(led_strip_set_pixel(led_strip, i,
+                    esp_random()%256 , 
+                    esp_random()%256, 
+                    esp_random()%256));
             }
             /* Refresh the strip to send data */
             ESP_ERROR_CHECK(led_strip_refresh(led_strip));
