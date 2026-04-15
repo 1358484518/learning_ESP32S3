@@ -2375,6 +2375,16 @@ CONFIG_MDNS_PREDEF_NETIF_AP=y
 CONFIG_MDNS_PREDEF_NETIF_ETH=y
 # end of MDNS Predefined interfaces
 # end of mDNS
+
+#
+# Media Library System Abstraction Layer Configuration
+#
+CONFIG_MEDIA_LIB_CRYPT_ENABLE=y
+CONFIG_MEDIA_LIB_SOCKET_ENABLE=y
+CONFIG_MEDIA_LIB_TLS_ENABLE=y
+CONFIG_MEDIA_LIB_NETIF_ENABLE=y
+# CONFIG_MEDIA_LIB_MEM_AUTO_TRACE is not set
+# end of Media Library System Abstraction Layer Configuration
 # end of Component config
 
 # CONFIG_IDF_EXPERIMENTAL_FEATURES is not set

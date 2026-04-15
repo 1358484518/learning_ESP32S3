@@ -17,3 +17,7 @@ dependencies:
   espressif/esp32-camera: ^2.1.6
   espressif/led_strip: ^3.0.3
   espressif/mdns: ^1.11.0
+#  espp/rtsp: ^1.0.36
+  mateusglucas/wifi_sta: ^1.0.1
+#  espressif/esp_peer: ^1.4.0
+  espressif/esp_media_protocols: ^0.6.0
