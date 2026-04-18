@@ -28,9 +28,9 @@
 #include "mbedtls/entropy.h"
 #include "esp_crt_bundle.h"
 
-#define WEB_SERVER "www.howsmyssl.com"
+#define WEB_SERVER "www.boce.com"//"www.howsmyssl.com"
 #define WEB_PORT "443"
-#define WEB_URL "https://www.howsmyssl.com/a/check"
+#define WEB_URL "https://www.boce.com/help/1018.html"  // "https://www.howsmyssl.com/a/check"
 
 #define EXAMPLE_ESP_WIFI_SSID      "klp123456"
 #define EXAMPLE_ESP_WIFI_PASS      "18902101360"
