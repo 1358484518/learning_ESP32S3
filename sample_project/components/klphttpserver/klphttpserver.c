@@ -612,8 +612,14 @@ void wifi_init_sta(void)
                                                         &instance_got_ip));
 
     //注册其他事件监听
-    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &connect_handler, &server));
-    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, &disconnect_handler, &server));
+    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, 
+        IP_EVENT_STA_GOT_IP, 
+        &connect_handler, 
+        &server));
+    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT,
+         WIFI_EVENT_STA_DISCONNECTED, 
+         &disconnect_handler, 
+         &server));
 
     wifi_config_t wifi_config = {
         .sta = {
