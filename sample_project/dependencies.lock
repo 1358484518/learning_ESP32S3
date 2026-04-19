@@ -90,13 +90,6 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.0.1
-  teriyakigod/esp_lcd_st7735:
-    component_hash: 5c61377ee7a5bbccb40a629c2db9c1918ce1645beb2732c007934c52bc1be2a1
-    dependencies: []
-    source:
-      registry_url: https://components.espressif.com/
-      type: service
-    version: 0.0.1
   waveshare/esp_lcd_st7735:
     component_hash: 811c4168555af5878eb9ec8c3eee8af277afebc3bc516bc0daa57656eee09c69
     dependencies: []
@@ -111,8 +104,7 @@ direct_dependencies:
 - espressif/mdns
 - idf
 - mateusglucas/wifi_sta
-- teriyakigod/esp_lcd_st7735
 - waveshare/esp_lcd_st7735
-manifest_hash: 642edfbe5a1be5c59d569046febad6a74bc30b94c5d1d005b7b9635d2186ba95
+manifest_hash: 285969f186d502a1be28508d60ed8e669a9200cb1eb15525bf482c53d605ec2a
 target: esp32s3
 version: 2.0.0

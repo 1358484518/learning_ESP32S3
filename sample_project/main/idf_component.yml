@@ -21,5 +21,5 @@ dependencies:
   mateusglucas/wifi_sta: ^1.0.1
 #  espressif/esp_peer: ^1.4.0
   espressif/esp_media_protocols: ^0.6.0
-  teriyakigod/esp_lcd_st7735: ^0.0.1
+  # teriyakigod/esp_lcd_st7735: ^0.0.1
   waveshare/esp_lcd_st7735: ^1.0.1

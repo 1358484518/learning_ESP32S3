@@ -12,6 +12,7 @@
 #include "klpsntp.h"
 #include "klphttpserver.h"
 #include "klpesptlshttpsclient.h"
+#include "klplcd.h"
 void app_main(void)
 {
     // ws2812();
@@ -25,5 +26,6 @@ void app_main(void)
     // klp_http_server();
     // klp_sntp();
     // klp_https_request();
-    klpesptlshttpsclient();
+    // klpesptlshttpsclient();
+    klp_lcd();
 }
